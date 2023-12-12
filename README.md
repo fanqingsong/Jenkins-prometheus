@@ -1,7 +1,7 @@
 ### 1.Set up Jenkins, prometheus, grafana
 
 ```bash
-docker run -d --name jenkins -p 8081:8080 -p 50000:50000 jenkins
+docker run -d --name jenkins -p 8081:8080 -p 50000:50000 jenkins/jenkins:latest
 docker run -d --name prometheus -p 9090:9090 prom/prometheus
 docker run -d --name grafana -p 3000:3000 grafana/grafana
 ```
